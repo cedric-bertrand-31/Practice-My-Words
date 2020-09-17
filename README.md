@@ -28,3 +28,6 @@ REQUEST_UPDATE_MARK_WORDS=
 ```
 
 Then backend project takes the lead, manage the data and put it into DB.
+
+# Google play page
+https://play.google.com/store/apps/details?id=com.processingbox.mydictionary&hl=en
