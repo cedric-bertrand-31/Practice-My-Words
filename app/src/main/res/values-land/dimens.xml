@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="wordVerticalPadding">12dp</dimen>
+    <dimen name="wordPadding">12dp</dimen>
+</resources>

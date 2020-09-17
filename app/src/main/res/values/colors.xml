@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="UP">#55132964</color>
+    <color name="MIDDLE_UP">#45132964</color>
+    <color name="MIDDLE_DOWN">#35132964</color>
+    <color name="DOWN">#25132964</color>
+    <color name="UP_noTransparency">#132964</color>
+    <color name="UP_BEGIN">#55132964</color>
+    <color name="UP_END">#55043d9b</color>
+    <color name="MIDDLE_UP_BEGIN">#45132964</color>
+    <color name="MIDDLE_UP_END">#45043d9b</color>
+    <color name="MIDDLE_DOWN_BEGIN">#35132964</color>
+    <color name="MIDDLE_DOWN_END">#35043d9b</color>
+    <color name="DOWN_BEGIN">#25132964</color>
+    <color name="DOWN_END">#25043d9b</color>
+    <color name="selected">#536dfe</color>
+    <color name="dialogColor">#043d9b</color>
+    <color name="rectStart">#BB132964</color>
+    <color name="rectEnd">#BB043d9b</color>
+    <color name="grayLikeWebSite">#0d181e</color>
+    <color name="lightGrayLikeWebSite">#374852</color>
+    <color name="notificationBackground">#8fa1db</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="almostWhite">#EEEEEE</color>
+    <color name="actionBar">#77000000</color>
+    <color name="buttonChooserStart">#55132964</color>
+    <color name="buttonChooserEnd">#55043d9b</color>
+    <color name="transparent">#00000000</color>
+    <color name="desactivated">#AAAAAA</color>
+
+    <color name="indigoAccent">#00BFA5</color>
+    <color name="indigo900">#1A237E</color>
+    <color name="indigo700">#00796B</color>
+    <color name="indigo600">#3949AB</color>
+    <color name="indigo500">#009688</color>
+    <color name="indigo400">#5C6BC0</color>
+    <color name="indigo300">#7986CB</color>
+    <color name="indigo200">#80CBC4</color>
+    <color name="indigo100">#B2DFDB</color>
+    <color name="indigo50">#E0F2F1</color>
+
+    <color name="blueListWord">#00a6ea</color>
+    <color name="redListWord">#e60003</color>
+    <color name="greenListWord">#38a42c</color>
+    <color name="yellowListWord">#feed01</color>
+    <color name="orangeListWord">#f18e00</color>
+    <color name="violetListWord">#e50083</color>
+    <color name="purpleListWord">#93308d</color>
+
+    <color name="material_blue_500">#5677fc</color>
+    <color name="row_selected">#205281FF</color>
+
+    <color name="correctAnswer">#6bba51</color>
+    <color name="wrongAnswer">#cd301b</color>
+
+</resources>

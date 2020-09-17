@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.processingbox.mydictionary">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <application
+        android:name="com.processingbox.mydictionary.MainApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.processingbox.mydictionary.activities.NewDictionaryActivity"
+            android:label="@string/newDictionary"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.processingbox.mydictionary.activities.DictionariesActivity"
+            android:label="@string/dictionaries"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.processingbox.mydictionary.activities.practicetest.PracticeTestActivity"
+            android:label="@string/startTest"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.processingbox.mydictionary.activities.practicetest.UniqueQuestionActivity"
+            android:label="@string/startTest"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.processingbox.mydictionary.parameters.ParametersActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/parameters"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name="com.processingbox.mydictionary.alarm.AlarmReceiver" />
+        <receiver android:name="com.processingbox.mydictionary.alarm.BootCompletedListener">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/practiceMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical"
+    android:padding="16sp">
+
+    <LinearLayout
+        android:id="@+id/layoutQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPracticeProgression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end" />
+
+        <TextView
+            android:id="@+id/textViewPracticeTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPracticeTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16sp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textColorHint="#666"
+            tools:ignore="LabelFor" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonPracticeNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_forward_white_24dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16sp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewCorrect"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/correct"
+            android:src="@drawable/correct"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewNotCorrect"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/not_correct"
+            android:src="@drawable/not_correct"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewPracticeResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24sp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

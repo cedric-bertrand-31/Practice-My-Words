@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_selection">
+
+    <RelativeLayout
+        android:id="@+id/row_word"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/wordVerticalPadding"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="@dimen/wordVerticalPadding"
+        android:padding="10dp">
+
+        <com.processingbox.mydictionary.gui.RotatedTextView
+            android:id="@+id/textViewWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="@dimen/wordPadding"
+            android:shadowColor="#666"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="@dimen/smallWordTextSize" />
+
+        <TextView
+            android:id="@+id/textViewTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewWord"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#666"
+            android:textSize="@dimen/translationTextSize"
+            android:textStyle="italic"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

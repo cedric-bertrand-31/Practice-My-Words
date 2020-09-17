@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.processingbox.mydictionary.MainActivity">
+
+    <item
+        android:id="@+id/reverse_translation"
+        android:icon="@drawable/ic_swap_horiz_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/reverseTranslation"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/dictionaries"
+        android:orderInCategory="100"
+        android:title="@string/dictionaries"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/start_test"
+        android:orderInCategory="100"
+        android:title="@string/startTest"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/parameters"
+        android:orderInCategory="100"
+        android:title="@string/parameters"
+        app:showAsAction="never" />
+
+</menu>
