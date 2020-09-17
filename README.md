@@ -1,6 +1,6 @@
 
 # Practice My Words
-Android native application for registering yourself words that you learn
+Android native application for registering yourself words that you learned
 
 # General presentation
 **Practice My Words** is an Android App allowing you to add each new words you have learned in a list where the translation is hidden. You can instantly display the translation if you have forgotten it.
@@ -13,12 +13,12 @@ Reinforce the memorization of words of the language you want to learn by consult
 
 # Installation
 The end-point URL must provided to the App source code so user's data can be stored on an external DB.
-For that create, in the ```app``` folder, create a file called:
+For that create in the ```app``` folder a file called:
 ```
 backend.properties
 ```
 
-That must contains the following lines:
+That contains the following lines:
 ```
 REQUEST_USER_ID=
 REQUEST_WRITE_WORD=
